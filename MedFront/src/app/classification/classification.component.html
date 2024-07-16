@@ -1,0 +1,18 @@
+<div class="bg-image"></div>
+<div class="container">
+  <mat-card class="card">
+    <h1>Upload an Image for Prediction</h1>
+    <input type="file" (change)="onFileSelected($event)" class="file-input" />
+    <button (click)="onUpload()" mat-raised-button color="primary">
+      Upload
+    </button>
+
+    <div *ngIf="prediction">
+      <h2>Prediction Result</h2>
+      <p>Prediction: {{ prediction }}</p>
+      <p>Vessel Density: {{ density }}</p>
+      <p>Vessel Length: {{ vesselLength }} mm</p>
+      <p>Tortuosity: {{ tortuosity }}</p>
+    </div>
+  </mat-card>
+</div>

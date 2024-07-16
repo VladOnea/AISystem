@@ -1,0 +1,27 @@
+.mat-toolbar{
+    margin-bottom: 20px;
+    width:auto;
+    background-color:  #007bff;
+}
+mat-form-field{
+    padding: 5px;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+
+mat-dialog-content {
+    overflow: hidden;
+}
+  
+mat-dialog-actions {
+    justify-content: flex-end;
+}
+
+.action-button {
+    margin-right: 10px; 
+  }
+  
+  .action-button:last-child {
+    margin-right: 0; 
+  }
