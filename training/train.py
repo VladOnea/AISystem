@@ -71,7 +71,6 @@ def trainModel(train_loader, val_loader, num_epochs=5, learning_rate=0.001, weig
             print("Early stopping triggered")
             break
 
-    # Visualize training and validation losses
     visualizeLoss(training_losses, validation_losses, num_epochs)
     
     try:
